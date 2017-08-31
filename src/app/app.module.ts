@@ -5,10 +5,14 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MaterialModule} from './shared/material/material.module';
 
 import { AppComponent } from './app.component';
+import { PhotoComponent } from './components/photo/photo.component';
+import { PhotoGridComponent } from './components/photo-grid/photo-grid.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PhotoComponent,
+    PhotoGridComponent
   ],
   imports: [
     BrowserModule,
