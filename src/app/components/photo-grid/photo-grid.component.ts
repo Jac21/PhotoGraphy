@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class PhotoGridComponent implements OnInit {
   constructor() { }
 
-  private tiles = [
+  public tiles = [
     {
       src: '../../../assets/images/photography/DSC_4544.JPG', alt: 'One',
       cols: 3, rows: 2, color: 'lightblue'
