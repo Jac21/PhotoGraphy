@@ -18,7 +18,7 @@ export class PhotoGridComponent implements OnInit {
       trueOrder: false,
       waitForImages: false,
       margin: 24,
-      columns: 6,
+      columns: 5,
       breakAt: {
         1200: 5,
         940: 3,

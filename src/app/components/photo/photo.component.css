@@ -1,7 +1,12 @@
+.app-photo-wrapper {
+  margin-bottom: 24px;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+
 .photo {
   width: 100%;
   display: block;
   height: auto;
-  max-width: 100%;
-  border: 0;
 }

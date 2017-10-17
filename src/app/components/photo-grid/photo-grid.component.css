@@ -1,4 +1,17 @@
-#macy-container {
-  position: relative; 
-  height: 2052px;
+.parent-section {
+  padding: 15px 0;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
+
+.container {
+  max-width: 100%;
+  width: 1128px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+#macy-container {
+  margin-top: 22px;
+}
+
