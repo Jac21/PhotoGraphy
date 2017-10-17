@@ -12,6 +12,7 @@
         "favicon.ico",
         "manifest.json",
         "assets/images",
+        "assets/icons",
         "assets/images/photography"
       ],
       "index": "index.html",
