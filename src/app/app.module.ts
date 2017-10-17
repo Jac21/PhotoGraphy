@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './shared/material/material.module';
 
 import 'hammerjs';
+import 'macy';
 
 import { AppComponent } from './components/app/app.component';
 import { PhotoComponent } from './components/photo/photo.component';
