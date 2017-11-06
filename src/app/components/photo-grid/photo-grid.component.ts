@@ -78,7 +78,7 @@ export class PhotoGridComponent implements OnInit {
       container: "#macy-container",
       trueOrder: false,
       waitForImages: false,
-      margin: 24,
+      margin: 12,
       columns: 5,
       breakAt: {
         1200: 5,

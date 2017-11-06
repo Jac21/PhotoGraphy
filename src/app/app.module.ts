@@ -13,12 +13,16 @@ import 'macy';
 import { AppComponent } from './components/app/app.component';
 import { PhotoComponent } from './components/photo/photo.component';
 import { PhotoGridComponent } from './components/photo-grid/photo-grid.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PhotoComponent,
-    PhotoGridComponent
+    PhotoGridComponent,
+    FooterComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

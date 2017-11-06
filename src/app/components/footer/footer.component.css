@@ -1,0 +1,16 @@
+.footer-wrapper {
+  text-align: center;
+  opacity: 0.8;
+  color: inherit;
+}
+
+a {
+  color: #586B8F;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00A0C6;
+  text-decoration: none;
+  cursor: pointer;
+}
