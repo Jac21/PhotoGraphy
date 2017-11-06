@@ -20,7 +20,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-@angular/core@4.4.5 MIT
+@angular/core@4.4.6 MIT
 
 @angular/material@2.0.0-beta.12 MIT
 The MIT License
@@ -70,13 +70,13 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-@angular/http@4.4.5 MIT
+@angular/http@4.4.6 MIT
 
 @angular/service-worker@1.0.0-beta.16 MIT
 
-@angular/animations@4.4.5 MIT
+@angular/animations@4.4.6 MIT
 
-@angular/forms@4.4.5 MIT
+@angular/forms@4.4.6 MIT
 
 zone.js@0.8.18 MIT
 The MIT License
@@ -102,7 +102,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-@angular/platform-browser@4.4.5 MIT
+@angular/platform-browser@4.4.6 MIT
 
 webpack@3.4.1 MIT
 Copyright JS Foundation and other contributors
@@ -127,9 +127,9 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
-macy@2.1.1 MIT
+macy@2.2.0 MIT
 
-@angular/common@4.4.5 MIT
+@angular/common@4.4.6 MIT
 
 css-loader@0.28.7 MIT
 Copyright JS Foundation and other contributors
