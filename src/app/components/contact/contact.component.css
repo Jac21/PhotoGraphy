@@ -1,0 +1,22 @@
+.back-button {
+  margin-bottom: 1em;
+}
+
+.contact-card {
+  width: 400px;
+}
+
+.header-image {
+  background-image: url('../../../assets/images/content/favicon.png');
+  background-size: cover;
+}
+
+.email-link {
+  color: #586B8F;
+}
+
+.email-link:hover {
+  color: #00A0C6;
+  cursor: pointer;
+}
+

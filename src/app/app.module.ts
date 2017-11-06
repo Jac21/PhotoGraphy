@@ -1,20 +1,26 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { HttpModule } from '@angular/http';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { RouterModule, Routes } from '@angular/router';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { HttpModule } from "@angular/http";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { RouterModule, Routes } from "@angular/router";
 
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './shared/material/material.module';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { MaterialModule } from "./shared/material/material.module";
 
-import 'hammerjs';
-import 'macy';
+import "hammerjs";
+import "macy";
 
-import { AppComponent } from './components/app/app.component';
-import { PhotoComponent } from './components/photo/photo.component';
-import { PhotoGridComponent } from './components/photo-grid/photo-grid.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { ContactComponent } from './components/contact/contact.component';
+import { AppComponent } from "./components/app/app.component";
+import { PhotoComponent } from "./components/photo/photo.component";
+import { PhotoGridComponent } from "./components/photo-grid/photo-grid.component";
+import { FooterComponent } from "./components/footer/footer.component";
+import { ContactComponent } from "./components/contact/contact.component";
+import { LandingComponent } from './components/landing/landing.component';
+
+const appRoutes: Routes = [
+  { path: "contact", component: ContactComponent },
+  { path: "**", component: LandingComponent }
+];
 
 @NgModule({
   declarations: [
@@ -22,9 +28,11 @@ import { ContactComponent } from './components/contact/contact.component';
     PhotoComponent,
     PhotoGridComponent,
     FooterComponent,
-    ContactComponent
+    ContactComponent,
+    LandingComponent
   ],
   imports: [
+    RouterModule.forRoot(appRoutes),
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
@@ -35,4 +43,4 @@ import { ContactComponent } from './components/contact/contact.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
