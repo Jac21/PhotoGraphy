@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, AfterViewInit } from "@angular/core";
 import Macy from "macy";
 
 @Component({
@@ -7,24 +7,23 @@ import Macy from "macy";
   styleUrls: ["./photo-grid.component.css"],
   moduleId: module.id
 })
-export class PhotoGridComponent implements OnInit {
+export class PhotoGridComponent implements AfterViewInit {
   public macy;
   private photos;
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit(): void {
+  ngAfterViewInit(): void {
     this.macy = Macy({
       container: "#macy-container",
       trueOrder: false,
       waitForImages: false,
       margin: 12,
-      columns: 5,
+      columns: 3,
       breakAt: {
-        1200: 5,
-        940: 4,
-        540: 2,
-        400: 1
+        1200: 3,
+        940: 2,
+        540: 1,
       }
     });
   }
@@ -38,10 +37,6 @@ export class PhotoGridComponent implements OnInit {
       {
         photoSrc: "assets/images/photography/DSC_0072.JPG",
         photoAlt: "Graffiti Park in Austin, Texas"
-      },
-      {
-        photoSrc: "assets/images/photography/DSC_0129.JPG",
-        photoAlt: "Enchanted Rock, Texas"
       },
       {
         photoSrc: "assets/images/photography/DSC_0335.JPG",
@@ -88,7 +83,7 @@ export class PhotoGridComponent implements OnInit {
         photoAlt: "Fredericksburg, Texas"
       },
       {
-        photoSrc: "assets/images/photography/DSC_4493.JPG",
+        photoSrc: "assets/images/photography/DSC_4516.JPG",
         photoAlt: "Spain"
       },
       {
@@ -101,10 +96,6 @@ export class PhotoGridComponent implements OnInit {
       },
       {
         photoSrc: "assets/images/photography/DSC_4705.JPG",
-        photoAlt: "Spain"
-      },
-      {
-        photoSrc: "assets/images/photography/DSC_4873.JPG",
         photoAlt: "Spain"
       }
     ];
