@@ -3,18 +3,18 @@
     "urls": {
       "https://jac21.github.io/PhotoGraphy/favicon.87027ce8af7a32d33890.png": "315c051215fea0d60280184146d961c98c0ba9f0",
       "https://jac21.github.io/PhotoGraphy/polyfills.35726d60cdf25fecc5f1.bundle.js": "1e4779eb00ffdcce4c9f4f6f7ca69d60d101b2ab",
-      "https://jac21.github.io/PhotoGraphy/main.31c13f6234338d7b96e1.bundle.js": "933998493f873d4fbd4f40d96da31a429b6c2554",
+      "https://jac21.github.io/PhotoGraphy/main.ac789a3b274c5378da9d.bundle.js": "44ef302a13eefa36ae020b23c47ebd25904de879",
       "https://jac21.github.io/PhotoGraphy/sw-register.6819cd2c5fa25470ecf2.bundle.js": "50d549edfbd188ed199d8d0b079afa593202e3ea",
       "https://jac21.github.io/PhotoGraphy/vendor.7a476cc769e69a9f273d.bundle.js": "00e152c50ec207af32a1063098796db76cb7fae6",
-      "https://jac21.github.io/PhotoGraphy/inline.c7c13a57c37306478ef8.bundle.js": "f659a137bccb6e9456c30a72a2235ff00d761afc",
+      "https://jac21.github.io/PhotoGraphy/inline.cfc112a867c71956c6e0.bundle.js": "fc3efa34451913a77c6929bc284eaa801a2cdc21",
       "https://jac21.github.io/PhotoGraphy/styles.df0e76d6855b9bb25686.bundle.css": "daa2ceb18f6c165fb6b729261ef32d6a821466b8",
-      "https://jac21.github.io/PhotoGraphy/assets/icons/android-icon-36x36.png": "224e4071fb10e413cf7b6526a276ca0d8afd113c",
-      "https://jac21.github.io/PhotoGraphy/assets/icons/android-icon-192x192.png": "8c9cf4c5699916f345afed8fa31c1cf8abfdba83",
       "https://jac21.github.io/PhotoGraphy/assets/icons/android-icon-144x144.png": "67bd89021854cc1c980165e0a549f646696bce9c",
+      "https://jac21.github.io/PhotoGraphy/assets/icons/android-icon-192x192.png": "8c9cf4c5699916f345afed8fa31c1cf8abfdba83",
+      "https://jac21.github.io/PhotoGraphy/assets/icons/android-icon-36x36.png": "224e4071fb10e413cf7b6526a276ca0d8afd113c",
       "https://jac21.github.io/PhotoGraphy/assets/icons/android-icon-48x48.png": "4b9e2e0d73ef32a02ade32786e80013a52c7dca7",
       "https://jac21.github.io/PhotoGraphy/assets/icons/android-icon-72x72.png": "f76373a8df0363abd0c9b30f9ebdbc7c0256e2dc",
-      "https://jac21.github.io/PhotoGraphy/assets/icons/android-icon-96x96.png": "3f7d2b5083a5a4b3dd31a1ddad4dd8e8cc0db8f6",
       "https://jac21.github.io/PhotoGraphy/assets/icons/apple-icon-114x114.png": "a2acbe321cc67c892c6541edb774d37c01809a93",
+      "https://jac21.github.io/PhotoGraphy/assets/icons/android-icon-96x96.png": "3f7d2b5083a5a4b3dd31a1ddad4dd8e8cc0db8f6",
       "https://jac21.github.io/PhotoGraphy/assets/icons/apple-icon-120x120.png": "316f3394b921303e3647b4c7e5f07c7434f0a264",
       "https://jac21.github.io/PhotoGraphy/assets/icons/apple-icon-144x144.png": "67bd89021854cc1c980165e0a549f646696bce9c",
       "https://jac21.github.io/PhotoGraphy/assets/icons/apple-icon-152x152.png": "06eb62a62bb82a461e0277f8d83d2d0cc325cba3",
@@ -57,7 +57,7 @@
       "https://jac21.github.io/PhotoGraphy/assets/images/photography/DSC_4705.JPG": "cfefa6842649669d11b502276bc0466f3a45ca98",
       "https://jac21.github.io/PhotoGraphy/favicon.ico": "5d27c0f5391e5ba1a458007b72d375e67af3f8c9",
       "https://jac21.github.io/PhotoGraphy/manifest.json": "232bab8c400c01dc2be9d34b43f47d877f016036",
-      "https://jac21.github.io/PhotoGraphy/index.html": "38fdb12ff24f04232cadc3ad333ca2e8abd066b8"
+      "https://jac21.github.io/PhotoGraphy/index.html": "46d9a374b1d8637a934e6c910eaea0e8bc652371"
     },
     "_generatedFromWebpack": true
   }
