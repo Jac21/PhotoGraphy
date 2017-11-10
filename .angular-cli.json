@@ -8,12 +8,12 @@
       "root": "src",
       "outDir": "dist",
       "assets": [
-        "assets",
+        "CNAME",
         "favicon.ico",
         "manifest.json",
-        "assets/images",
-        "assets/icons",
-        "assets/images/photography"
+        "robots.txt",
+        "sitemap.xml",
+        "assets"
       ],
       "index": "index.html",
       "main": "main.ts",
