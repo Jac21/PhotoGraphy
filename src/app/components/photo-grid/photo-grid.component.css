@@ -9,3 +9,6 @@
   margin-top: 22px;
 }
 
+app-photo {
+  cursor: pointer;
+}

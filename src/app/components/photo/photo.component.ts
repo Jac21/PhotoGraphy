@@ -9,7 +9,6 @@ import { Component, OnInit, Input } from "@angular/core";
 export class PhotoComponent implements OnInit {
   constructor() {}
 
-  @Input() photoHref: string;
   @Input() photoSrc: string;
   @Input() photoAlt: string;
 
