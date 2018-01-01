@@ -3,14 +3,12 @@ import { CommonModule } from "@angular/common";
 
 import {
   MatButtonModule,
-  MatButtonToggleModule,
   MatCardModule,
-  MatGridListModule,
   MatTooltipModule
 } from "@angular/material";
 
 @NgModule({
-  exports: [MatCardModule, MatTooltipModule],
+  exports: [MatButtonModule, MatCardModule, MatTooltipModule],
   declarations: []
 })
-export class MaterialModule {}
+export class MaterialModule { }
