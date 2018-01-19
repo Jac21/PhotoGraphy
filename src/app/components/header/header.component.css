@@ -1,0 +1,14 @@
+.header-link {
+  text-align: center;
+  text-decoration: none;
+  color: #525252;
+}
+
+.header-title {
+  font-family: "Playfair Display SC";
+  font-weight: 400;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 20px;
+}
+
