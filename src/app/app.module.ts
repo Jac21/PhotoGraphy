@@ -16,6 +16,7 @@ import { FooterComponent } from "./components/footer/footer.component";
 import { ContactComponent } from "./components/contact/contact.component";
 import { LandingComponent } from "./components/landing/landing.component";
 import { LightboxComponent } from "./components/lightbox/lightbox.component";
+import { HeaderComponent } from './components/header/header.component';
 
 const appRoutes: Routes = [
   { path: "contact", component: ContactComponent },
@@ -31,7 +32,8 @@ const appRoutes: Routes = [
     FooterComponent,
     ContactComponent,
     LandingComponent,
-    LightboxComponent
+    LightboxComponent,
+    HeaderComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
