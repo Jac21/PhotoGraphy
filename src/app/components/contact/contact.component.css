@@ -20,3 +20,8 @@
   cursor: pointer;
 }
 
+.button-primary {
+  color: white;
+  background-color: #26a69a;
+}
+
