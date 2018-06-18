@@ -1,5 +1,3 @@
-<a mat-raised-button class="back-button" routerLink="/">Back</a>
-
 <div class="contact-card-wrapper">
   <mat-card class="contact-card md-elevation-z4">
     <mat-card-header>
@@ -8,25 +6,27 @@
       <mat-card-subtitle>Software Developer & Photographer</mat-card-subtitle>
     </mat-card-header>
     <img mat-card-image src="assets/images/content/headshot-photo.jpg" alt="Photo of Jeremy Cantu">
-    <mat-card-content>
-      <p>
-        <strong>Location</strong>: Austin, TX</p>
-      <p>
-        <strong>Phone</strong>: (956)286-8386</p>
-      <p>
-        <strong>Email</strong>:
-        <a class="email-link" href="mailto:jcantu521@gmail.com" target="_top">jcantu521@gmail.com</a>
-      </p>
-    </mat-card-content>
-    <mat-card-actions>
-      <a mat-raised-button href="https://www.jeremycantu.com" rel="noopener noreferrer" target="_blank" class="button-primary">Portfolio</a>
-      <a mat-raised-button href="https://github.com/jac21" rel="noopener noreferrer" target="_blank">GitHub</a>
-      <link href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet">
-      <a href="https://www.buymeacoffee.com/jac21" target="_blank" rel="noopener noreferrer" class="bmc-button">
-        <img src="assets/icons/BMC-btn-logo.svg" alt="Buy me a coffee">
-        <span style="margin-left:5px">Buy me a coffee</span>
-      </a>
-    </mat-card-actions>
+    <div class="card-content-wrapper">
+      <mat-card-content>
+        <p>
+          <strong>Location</strong>: Austin, TX</p>
+        <p>
+          <strong>Phone</strong>: (956)286-8386</p>
+        <p>
+          <strong>Email</strong>:
+          <a class="email-link" href="mailto:jcantu521@gmail.com" target="_top">mail@jeremycantu.com</a>
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <a mat-button href="https://www.jeremycantu.com" rel="noopener noreferrer" target="_blank" class="button-primary">Portfolio</a>
+        <a mat-button href="https://github.com/jac21" rel="noopener noreferrer" target="_blank" class="button-primary">GitHub</a>
+        <link href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet">
+        <a href="https://www.buymeacoffee.com/jac21" target="_blank" rel="noopener noreferrer" class="bmc-button">
+          <img src="assets/icons/BMC-btn-logo.svg" alt="Buy me a coffee">
+          <span style="margin-left:5px">Buy me a coffee</span>
+        </a>
+      </mat-card-actions>
+    </div>
   </mat-card>
+  <app-lightbox-footer></app-lightbox-footer>
 </div>
-

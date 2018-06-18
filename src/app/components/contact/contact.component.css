@@ -4,11 +4,16 @@
 
 .contact-card {
   width: 360px;
+  margin: 0 auto;
 }
 
 .header-image {
   background-image: url('../../../assets/images/content/favicon.png');
   background-size: cover;
+}
+
+.card-content-wrapper {
+  text-align: center;
 }
 
 .email-link {
