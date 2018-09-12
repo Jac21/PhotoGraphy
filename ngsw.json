@@ -17,6 +17,7 @@
       "installMode": "lazy",
       "updateMode": "prefetch",
       "urls": [
+        "/assets/icons/BMC-btn-logo.svg",
         "/assets/icons/android-icon-144x144.png",
         "/assets/icons/android-icon-192x192.png",
         "/assets/icons/android-icon-36x36.png",
@@ -34,7 +35,6 @@
         "/assets/icons/apple-icon-76x76.png",
         "/assets/icons/apple-icon-precomposed.png",
         "/assets/icons/apple-icon.png",
-        "/assets/icons/BMC-btn-logo.svg",
         "/assets/icons/browserconfig.xml",
         "/assets/icons/favicon-16x16.png",
         "/assets/icons/favicon-32x32.png",
@@ -72,9 +72,8 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/favicon.ico": "5d27c0f5391e5ba1a458007b72d375e67af3f8c9",
+    "/assets/icons/BMC-btn-logo.svg": "7eb8838a6463e1ff1371864fb7641884fa6fd949",
     "/assets/icons/android-icon-144x144.png": "67bd89021854cc1c980165e0a549f646696bce9c",
-    "/index.html": "61f803b723e6260fff2acd24b69526479d841312",
     "/assets/icons/android-icon-192x192.png": "8c9cf4c5699916f345afed8fa31c1cf8abfdba83",
     "/assets/icons/android-icon-36x36.png": "224e4071fb10e413cf7b6526a276ca0d8afd113c",
     "/assets/icons/android-icon-48x48.png": "4b9e2e0d73ef32a02ade32786e80013a52c7dca7",
@@ -91,7 +90,6 @@
     "/assets/icons/apple-icon-76x76.png": "3d31d22b477c7e93e39825f4a2ed5c541fd78a96",
     "/assets/icons/apple-icon-precomposed.png": "81048feafad4f6e7a0ebec73beb87f7c773c1946",
     "/assets/icons/apple-icon.png": "81048feafad4f6e7a0ebec73beb87f7c773c1946",
-    "/assets/icons/BMC-btn-logo.svg": "7eb8838a6463e1ff1371864fb7641884fa6fd949",
     "/assets/icons/browserconfig.xml": "ce58ec7b540ac612622639f316e24560cc002778",
     "/assets/icons/favicon-16x16.png": "47ce6521a8d304bf847b3ccc77d508df2f808b25",
     "/assets/icons/favicon-32x32.png": "c12cf935fa3dbf87f5face31c84b4bfabb8e1ec9",
@@ -122,7 +120,9 @@
     "/assets/images/photography/DSC_4516.JPG": "b3b2906aa187e4c846b2f8088f64dd528ae3d0f6",
     "/assets/images/photography/DSC_4544.JPG": "a7416484ba1fd22e7d5890531067bf890aa241c9",
     "/assets/images/photography/DSC_4634.JPG": "30bc1af34014f1bf041d5b352d00adf1be81db76",
-    "/assets/images/photography/DSC_4705.JPG": "e72a2168c45c46ea43b990a0db5b157337a189e8"
+    "/assets/images/photography/DSC_4705.JPG": "e72a2168c45c46ea43b990a0db5b157337a189e8",
+    "/favicon.ico": "5d27c0f5391e5ba1a458007b72d375e67af3f8c9",
+    "/index.html": "7fd43dfab6f7a382d2a598421c0ad0aac0d222d8"
   },
   "navigationUrls": [
     {
@@ -131,15 +131,15 @@
     },
     {
       "positive": false,
-      "regex": "^\\/(?:.+\\/)?[^\\/]*\\.[^\\/]*$"
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
     },
     {
       "positive": false,
-      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*$"
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
     },
     {
       "positive": false,
-      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*\\/.*$"
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
     }
   ]
 }
