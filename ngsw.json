@@ -8,7 +8,11 @@
       "updateMode": "prefetch",
       "urls": [
         "/favicon.ico",
-        "/index.html"
+        "/index.html",
+        "/main.c74b582ef9750436895e.js",
+        "/polyfills.1a167dee13490da65302.js",
+        "/runtime.a66f828dca56eeb90e02.js",
+        "/styles.c03c90817c6730d8c166.css"
       ],
       "patterns": []
     },
@@ -122,7 +126,11 @@
     "/assets/images/photography/DSC_4634.JPG": "30bc1af34014f1bf041d5b352d00adf1be81db76",
     "/assets/images/photography/DSC_4705.JPG": "e72a2168c45c46ea43b990a0db5b157337a189e8",
     "/favicon.ico": "5d27c0f5391e5ba1a458007b72d375e67af3f8c9",
-    "/index.html": "7fd43dfab6f7a382d2a598421c0ad0aac0d222d8"
+    "/index.html": "dcd269ee944a2bd3f942d8c7e85e158005b26f8f",
+    "/main.c74b582ef9750436895e.js": "da6ed296747d0130ddbfe1f9a546c60727e1e2ce",
+    "/polyfills.1a167dee13490da65302.js": "5ba77536d3c0e68c596eea0033c1c7f9018ab855",
+    "/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
+    "/styles.c03c90817c6730d8c166.css": "bfae846432d3799015352fac994fd4a1f0825768"
   },
   "navigationUrls": [
     {
