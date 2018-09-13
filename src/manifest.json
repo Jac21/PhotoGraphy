@@ -1,11 +1,11 @@
 {
-  "name": "PhotoGraphy",
-  "short_name": "PhotoGraphy",
+  "name": "photography",
+  "short_name": "photography",
   "theme_color": "#586B8F",
   "background_color": "#586B8F",
-  "start_url": "/",
   "display": "standalone",
-  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
   "icons": [{
       "src": "/assets/icons/favicon.png",
       "type": "image/png",
@@ -53,4 +53,3 @@
     }
   ]
 }
-

@@ -18,6 +18,8 @@ import { LandingComponent } from "./components/landing/landing.component";
 import { LightboxComponent } from "./components/lightbox/lightbox.component";
 import { HeaderComponent } from "./components/header/header.component";
 import { LightboxFooterComponent } from './components/lightbox-footer/lightbox-footer.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 const appRoutes: Routes = [
   { path: "contact", component: ContactComponent },
@@ -42,9 +44,10 @@ const appRoutes: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
     HttpModule,
-    MaterialModule
+    MaterialModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

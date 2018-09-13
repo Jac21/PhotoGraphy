@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "photo-graphy": {
+    "photography": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -22,7 +22,8 @@
               "src/manifest.json",
               "src/robots.txt",
               "src/sitemap.xml",
-              "src/assets"
+              "src/assets",
+              "src/manifest.json"
             ],
             "styles": [
               "src/styles.css"
@@ -58,18 +59,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "photo-graphy:build"
+            "browserTarget": "photography:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "photo-graphy:build:production"
+              "browserTarget": "photography:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "photo-graphy:build"
+            "browserTarget": "photography:build"
           }
         },
         "test": {
@@ -89,7 +90,8 @@
               "src/manifest.json",
               "src/robots.txt",
               "src/sitemap.xml",
-              "src/assets"
+              "src/assets",
+              "src/manifest.json"
             ]
           }
         },
@@ -107,7 +109,7 @@
         }
       }
     },
-    "photo-graphy-e2e": {
+    "photography-e2e": {
       "root": "",
       "sourceRoot": "",
       "projectType": "application",
@@ -116,7 +118,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "photo-graphy:serve"
+            "devServerTarget": "photography:serve"
           }
         },
         "lint": {
@@ -133,7 +135,7 @@
       }
     }
   },
-  "defaultProject": "photo-graphy",
+  "defaultProject": "photography",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
