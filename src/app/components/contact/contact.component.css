@@ -2,9 +2,14 @@
   margin-bottom: 1em;
 }
 
+.contact-card-wrapper {
+  padding: 1em 0 0 0;
+}
+
 .contact-card {
   width: 360px;
   margin: 0 auto;
+  border-top: 3px solid #00a0c6;
 }
 
 .header-image {
