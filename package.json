@@ -11,8 +11,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "predeploy": "npm run budget",
-    "deploy": "ng build --prod --build-optimizer ",
-    "postdeploy": "ngh"
+    "deploy": "ng build --prod --build-optimizer --base-href \"https://jcantuphotography.com/\"",
+    "postdeploy": "npx angular-cli-ghpages --dir=dist"
   },
   "private": true,
   "dependencies": {
