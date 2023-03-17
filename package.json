@@ -36,7 +36,7 @@
     "hammerjs": "^2.0.8",
     "jasmine-core": "^3.2.1",
     "karma": "^2.0.5",
-    "macy": "^2.3.1",
+    "macy": "^2.5.1",
     "protractor": "^5.4.1",
     "rxjs": "6.1.0",
     "ts-node": "^6.2.0",
