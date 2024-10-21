@@ -5,8 +5,6 @@ import { RouterModule, Routes } from "@angular/router";
 
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MaterialModule } from "./shared/material/material.module";
-
-import "hammerjs";
 import "macy";
 
 import { AppComponent } from "./components/app/app.component";
