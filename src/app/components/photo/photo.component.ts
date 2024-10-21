@@ -4,7 +4,6 @@ import { Component, OnInit, Input } from "@angular/core";
   selector: "app-photo",
   templateUrl: "./photo.component.html",
   styleUrls: ["./photo.component.css"],
-  moduleId: module.id
 })
 export class PhotoComponent implements OnInit {
   constructor() {}

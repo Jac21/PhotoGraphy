@@ -5,7 +5,6 @@ import Macy from "macy";
   selector: "app-photo-grid",
   templateUrl: "./photo-grid.component.html",
   styleUrls: ["./photo-grid.component.css"],
-  moduleId: module.id
 })
 export class PhotoGridComponent implements AfterViewInit {
   public macy;
