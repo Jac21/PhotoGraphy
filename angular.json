@@ -125,7 +125,6 @@
       }
     }
   },
-  "defaultProject": "PhotoGraphy",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
