@@ -1,18 +1,22 @@
 {
   "configVersion": 1,
+  "timestamp": 1729555437783,
   "index": "https://jcantuphotography.com/index.html",
   "assetGroups": [
     {
       "name": "app",
       "installMode": "prefetch",
       "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
       "urls": [
         "https://jcantuphotography.com/favicon.ico",
         "https://jcantuphotography.com/index.html",
-        "https://jcantuphotography.com/main.514d6d80d5aaa71cf44d.js",
-        "https://jcantuphotography.com/polyfills.4e36e48e4340f84aa553.js",
-        "https://jcantuphotography.com/runtime.a66f828dca56eeb90e02.js",
-        "https://jcantuphotography.com/styles.173375eb50389d9fd095.css"
+        "https://jcantuphotography.com/main.e225ac73d8d3739c.js",
+        "https://jcantuphotography.com/polyfills.1d8e1886878410a8.js",
+        "https://jcantuphotography.com/runtime.055ab9338082a7f0.js",
+        "https://jcantuphotography.com/styles.df632d8fc187dd9f.css"
       ],
       "patterns": []
     },
@@ -20,6 +24,9 @@
       "name": "assets",
       "installMode": "lazy",
       "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
       "urls": [
         "https://jcantuphotography.com/assets/icons/BMC-btn-logo.svg",
         "https://jcantuphotography.com/assets/icons/android-icon-144x144.png",
@@ -124,11 +131,11 @@
     "https://jcantuphotography.com/assets/images/photography/DSC_70750028.JPG": "a7c8a301737fd9d5e14ce9bfe45dcfc7bcbf9508",
     "https://jcantuphotography.com/assets/images/photography/DSC_9797.JPG": "01c340382e37a45f1d2296b7b29370dbfd0260d2",
     "https://jcantuphotography.com/favicon.ico": "5d27c0f5391e5ba1a458007b72d375e67af3f8c9",
-    "https://jcantuphotography.com/index.html": "ae608f50f856c4e1062e16f12f8563d3ec8ba73a",
-    "https://jcantuphotography.com/main.514d6d80d5aaa71cf44d.js": "ada272bdc822c0efca057ce7a56c3a2c7e734c72",
-    "https://jcantuphotography.com/polyfills.4e36e48e4340f84aa553.js": "a1514521f2f9d0a5c3690ca77c84115893bdab47",
-    "https://jcantuphotography.com/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
-    "https://jcantuphotography.com/styles.173375eb50389d9fd095.css": "bfae846432d3799015352fac994fd4a1f0825768"
+    "https://jcantuphotography.com/index.html": "d43b3c96372ece49d98b43d85fac2342cfe15939",
+    "https://jcantuphotography.com/main.e225ac73d8d3739c.js": "014c8c98f009d0ebe9e3e3bc9db559c88fee162f",
+    "https://jcantuphotography.com/polyfills.1d8e1886878410a8.js": "d16a82d6af473761b208585690c690d4717d4689",
+    "https://jcantuphotography.com/runtime.055ab9338082a7f0.js": "decb8fe717b21cb10a6a8f69760ae6ec07c75552",
+    "https://jcantuphotography.com/styles.df632d8fc187dd9f.css": "be91caeac3e1e718df446c50c7c7171ab0cc7bd1"
   },
   "navigationUrls": [
     {
@@ -147,5 +154,6 @@
       "positive": false,
       "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
     }
-  ]
+  ],
+  "navigationRequestStrategy": "performance"
 }
