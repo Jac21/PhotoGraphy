@@ -1,6 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-import { HttpClientModule } from "@angular/common/http";
+import { provideHttpClient, withInterceptorsFromDi } from "@angular/common/http";
 import { RouterModule, Routes } from "@angular/router";
 
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
@@ -25,27 +25,20 @@ const appRoutes: Routes = [
   { path: "**", component: LandingComponent }
 ];
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    PhotoComponent,
-    PhotoGridComponent,
-    FooterComponent,
-    ContactComponent,
-    LandingComponent,
-    LightboxComponent,
-    HeaderComponent,
-    LightboxFooterComponent
-  ],
-  imports: [
-    RouterModule.forRoot(appRoutes),
-    BrowserModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
-    MaterialModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        PhotoComponent,
+        PhotoGridComponent,
+        FooterComponent,
+        ContactComponent,
+        LandingComponent,
+        LightboxComponent,
+        HeaderComponent,
+        LightboxFooterComponent
+    ],
+    bootstrap: [AppComponent], imports: [RouterModule.forRoot(appRoutes),
+        BrowserModule,
+        BrowserAnimationsModule,
+        MaterialModule,
+        ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { }
