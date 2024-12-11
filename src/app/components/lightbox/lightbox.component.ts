@@ -29,7 +29,7 @@ export class LightboxComponent implements OnInit, OnDestroy {
     this.meta.updateTag({
       property: "og:image",
       content:
-        "https://jac21.github.io/PhotoGraphy/assets/images/photography/DSC_" +
+        "https://jac21.github.io/PhotoGraphy/assets/images/photography/" +
         this.id +
         ".JPG"
     });
