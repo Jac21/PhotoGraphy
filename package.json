@@ -39,7 +39,7 @@
     "rxjs": "6.6.7",
     "ts-node": "^6.2.0",
     "tslint": "~6.1.0",
-    "zone.js": "^0.14.10"
+    "zone.js": "^0.15.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^18.2.12",
