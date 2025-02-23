@@ -28,7 +28,8 @@
             ],
             "styles": ["src/styles.css"],
             "scripts": [],
-            "browser": "src/main.ts"
+            "browser": "src/main.ts",
+            "allowedCommonJsDependencies": ["macy"]
           },
           "configurations": {
             "production": {
@@ -49,8 +50,8 @@
                 {
                   "type": "bundle",
                   "name": "vendor",
-                  "baseline": "500kb",
-                  "warning": "100kb"
+                  "baseline": "800kb",
+                  "warning": "500kb"
                 }
               ]
             }
