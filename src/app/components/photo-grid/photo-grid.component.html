@@ -25,6 +25,7 @@
           [routerLink]="['/lightbox', photo.id]"
           [photoAlt]="photo.photoAlt"
           [photoSrc]="photo.photoSrc"
+          [photoTitle]="photo.photoTitle"
           [loading]="index < 3 ? 'eager' : 'lazy'"
           [fetchPriority]="index < 3 ? 'high' : 'auto'"
           (imageLoaded)="onPhotoLoaded()"

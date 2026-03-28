@@ -2,6 +2,7 @@
   <img
     [src]="photoSrc"
     [alt]="photoAlt"
+    [attr.title]="photoTitle || null"
     [loading]="loading"
     [attr.fetchpriority]="fetchPriority"
     (load)="onImageLoad()"

@@ -36,7 +36,10 @@ const appRoutes: Routes = [
         HeaderComponent,
         LightboxFooterComponent
     ],
-    bootstrap: [AppComponent], imports: [RouterModule.forRoot(appRoutes),
+    bootstrap: [AppComponent], imports: [RouterModule.forRoot(appRoutes, {
+            scrollPositionRestoration: "enabled",
+            anchorScrolling: "enabled"
+        }),
         BrowserModule,
         BrowserAnimationsModule,
         MaterialModule,

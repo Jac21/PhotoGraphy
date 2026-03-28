@@ -12,6 +12,7 @@ interface PhotoItem {
   id: number;
   photoSrc: string;
   photoAlt: string;
+  photoTitle?: string;
 }
 
 @Component({
@@ -81,9 +82,23 @@ export class PhotoGridComponent implements OnInit, AfterViewInit, OnDestroy {
       photoAlt: "Trinity College, Dublin, Ireland",
     },
     {
+      id: 4034431755,
+      photoSrc: "assets/images/photography/4034431755.JPG",
+      photoAlt:
+        "401 Deep Eddy Ave, Austin, TX 78703",
+      photoTitle: "Deep Eddy Municipal Pool",
+    },
+    {
       id: 9797,
       photoSrc: "assets/images/photography/9797.JPG",
       photoAlt: "Playa Guajataca, Isabela, Puerto Rico",
+    },
+    {
+      id: 5898005341,
+      photoSrc: "assets/images/photography/5898005341.JPG",
+      photoAlt:
+        "No. 25號, Lane 49, Chifeng St, Datong District, Taipei City, Taiwan 10353",
+      photoTitle: "Datong District",
     },
     {
       id: 70710021,
@@ -94,6 +109,13 @@ export class PhotoGridComponent implements OnInit, AfterViewInit, OnDestroy {
       id: 70750028,
       photoSrc: "assets/images/photography/70750028.JPG",
       photoAlt: "Arashiyama Yusaitei in Kyoto, Japan",
+    },
+    {
+      id: 96460166,
+      photoSrc: "assets/images/photography/96460166.JPG",
+      photoAlt:
+        "Joanne & Iris",
+      photoTitle: "Emma Long Metropolitan Park",
     },
     {
       id: 295350033,

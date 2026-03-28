@@ -10,6 +10,7 @@ export class PhotoComponent implements OnInit {
 
   @Input() photoSrc: string;
   @Input() photoAlt: string;
+  @Input() photoTitle?: string;
   @Input() loading: "eager" | "lazy" = "lazy";
   @Input() fetchPriority: "high" | "auto" = "auto";
   @Output() imageLoaded = new EventEmitter<void>();
