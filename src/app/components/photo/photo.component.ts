@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from "@angular/core";
+import { Component, EventEmitter, Input, OnInit, Output } from "@angular/core";
 
 @Component({
   selector: "app-photo",
@@ -10,6 +10,13 @@ export class PhotoComponent implements OnInit {
 
   @Input() photoSrc: string;
   @Input() photoAlt: string;
+  @Input() loading: "eager" | "lazy" = "lazy";
+  @Input() fetchPriority: "high" | "auto" = "auto";
+  @Output() imageLoaded = new EventEmitter<void>();
 
   ngOnInit() {}
+
+  public onImageLoad(): void {
+    this.imageLoaded.emit();
+  }
 }

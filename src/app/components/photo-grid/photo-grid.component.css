@@ -5,6 +5,39 @@
   margin: 0 auto;
 }
 
+.photo-grid-page {
+  padding-bottom: 48px;
+}
+
+.gallery-intro {
+  padding: 20px 0 10px;
+}
+
+.gallery-eyebrow {
+  margin: 0 0 12px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #6d4c41;
+}
+
+.gallery-title {
+  margin: 0;
+  max-width: 12ch;
+  font-size: clamp(2rem, 5vw, 3.75rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
+
+.gallery-copy {
+  margin: 18px 0 0;
+  max-width: 640px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #4d4d4d;
+}
+
 #macy-container {
   margin-top: 22px;
 }
@@ -13,3 +46,42 @@ app-photo {
   cursor: pointer;
 }
 
+.load-trigger {
+  display: flex;
+  justify-content: center;
+  padding: 28px 0 0;
+}
+
+.load-more-button {
+  border: 1px solid #d7ccc8;
+  border-radius: 999px;
+  padding: 0.95rem 1.4rem;
+  background: #fffaf7;
+  color: #3e2723;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    border-color 160ms ease;
+  box-shadow: 0 10px 24px rgba(62, 39, 35, 0.08);
+}
+
+.load-more-button:hover,
+.load-more-button:focus-visible {
+  transform: translateY(-1px);
+  border-color: #bcaaa4;
+  box-shadow: 0 16px 32px rgba(62, 39, 35, 0.12);
+}
+
+@media (max-width: 540px) {
+  .gallery-intro {
+    padding-top: 8px;
+  }
+
+  .gallery-copy {
+    font-size: 1rem;
+  }
+}

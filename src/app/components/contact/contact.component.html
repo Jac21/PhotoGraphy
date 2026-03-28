@@ -1,56 +1,73 @@
-<div class="contact-card-wrapper">
-  <mat-card class="contact-card md-elevation-z4">
-    <mat-card-header>
-      <div mat-card-avatar class="header-image"></div>
-      <mat-card-title>Jeremy Cantu</mat-card-title>
-      <mat-card-subtitle>Software Developer & Photographer</mat-card-subtitle>
-    </mat-card-header>
-    <img
-      mat-card-image
-      src="assets/images/content/headshot-photo.jpg"
-      alt="Photo of Jeremy Cantu"
-    />
-    <div class="card-content-wrapper">
-      <mat-card-content>
-        <p>Based in Austin, TX</p>
-        <p>
-          <a class="email-link" href="mailto:jcantu521@gmail.com" target="_top"
-            >mail&#64;jeremycantu.com</a
-          >
-        </p>
-      </mat-card-content>
-      <mat-card-actions>
+<section class="contact-page">
+  <div class="contact-shell">
+    <div class="contact-intro">
+      <p class="contact-eyebrow">Contact</p>
+      <h2 class="contact-title">
+        Let&apos;s talk about photographs, projects, or prints.
+      </h2>
+      <p class="contact-copy">
+        I&apos;m Jeremy Cantu, a photographer and software developer based in
+        Austin, Texas. If you&apos;d like to collaborate or inquire about a
+        photo, I&apos;d love to hear from you.
+      </p>
+
+      <div class="contact-primary">
         <a
-          mat-raised-button
+          class="contact-email"
+          href="mailto:jcantu521@gmail.com"
+          target="_top"
+        >
+          mail&#64;jeremycantu.com
+        </a>
+        <p class="contact-location">Austin, Texas</p>
+      </div>
+
+      <div class="contact-actions" aria-label="Contact links">
+        <a
           href="https://www.jeremycantu.com"
           rel="noopener noreferrer"
           target="_blank"
-          class="button-primary"
+          class="contact-link"
           >Portfolio</a
         >
         <a
-          mat-raised-button
           href="https://github.com/jac21"
           rel="noopener noreferrer"
           target="_blank"
-          class="button-primary"
+          class="contact-link"
           >GitHub</a
         >
-        <link
-          href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext"
-          rel="stylesheet"
-        />
         <a
-          href="https://www.buymeacoffee.com/jac21"
+          href="https://www.newgrain.app/jac21"
           target="_blank"
           rel="noopener noreferrer"
-          class="bmc-button"
+          class="contact-link contact-link-newgrain"
         >
-          <img src="assets/icons/BMC-btn-logo.svg" alt="Buy me a coffee" />
-          <span style="margin-left: 5px">Buy me a coffee</span>
+          <span class="contact-link-divider" aria-hidden="true"></span>
+          <span class="contact-link-label">Newgrain</span>
+          <span class="contact-link-divider" aria-hidden="true"></span>
         </a>
-      </mat-card-actions>
+      </div>
     </div>
-  </mat-card>
+
+    <aside class="contact-profile" aria-label="Profile">
+      <figure class="contact-portrait">
+        <img
+          src="assets/images/content/headshot-photo.jpg"
+          alt="Photo of Jeremy Cantu"
+        />
+      </figure>
+
+      <div class="contact-details">
+        <p class="contact-name">Jeremy Cantu</p>
+        <p class="contact-role">Photography, code, amateur compositions.</p>
+        <p class="contact-note">
+          Working across (mainly) analog formats, with a soft spot for the road
+          less traveled.
+        </p>
+      </div>
+    </aside>
+  </div>
+
   <app-lightbox-footer></app-lightbox-footer>
-</div>
+</section>

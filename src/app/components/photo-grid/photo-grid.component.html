@@ -1,112 +1,44 @@
-<main>
-  <section>
+<main class="photo-grid-page">
+  <section class="gallery-intro">
+    <div class="container">
+      <p class="gallery-eyebrow">Selected Work</p>
+      <h2 class="gallery-title">
+        Photographs gathered across places, formats, and seasons.
+      </h2>
+      <p class="gallery-copy">
+        These images were made on a mix of digital and analog cameras and film
+        stocks while traveling through cities, coastlines, and quiet corners
+        around the world. Stay awhile.
+      </p>
+    </div>
+  </section>
+
+  <section class="gallery-grid">
     <div class="container">
       <div id="macy-container">
         <app-photo
-          [routerLink]="['/lightbox', 8326]"
-          photoSrc="assets/images/photography/8326.JPG"
-          photoAlt="Liantan Rd, Zuoying District, Kaohsiung City, Taiwan"
+          *ngFor="
+            let photo of visiblePhotos;
+            let index = index;
+            trackBy: trackByPhotoId
+          "
+          [routerLink]="['/lightbox', photo.id]"
+          [photoAlt]="photo.photoAlt"
+          [photoSrc]="photo.photoSrc"
+          [loading]="index < 3 ? 'eager' : 'lazy'"
+          [fetchPriority]="index < 3 ? 'high' : 'auto'"
+          (imageLoaded)="onPhotoLoaded()"
         ></app-photo>
-        <app-photo
-          [routerLink]="['/lightbox', 9154043622]"
-          photoSrc="assets/images/photography/9154043622.JPG"
-          photoAlt="Blanton Museum of Art, Austin, Texas"
-        ></app-photo>
-        <app-photo
-          [routerLink]="['/lightbox', 5608041502]"
-          photoSrc="assets/images/photography/5608041502.JPG"
-          photoAlt="Cabo Rojo, Puerto Rico"
-        ></app-photo>
-        <app-photo
-          [routerLink]="['/lightbox', 5936]"
-          photoSrc="assets/images/photography/5936.JPG"
-          photoAlt="Ruifeng Night Market, Kaohsiung City, Taiwan"
-        ></app-photo>
-        <app-photo
-          [routerLink]="['/lightbox', 9154043623]"
-          photoSrc="assets/images/photography/9154043623.JPG"
-          photoAlt="'Austin' by Ellsworth Kelly, Austin, Texas"
-        ></app-photo>
-        <app-photo
-          [routerLink]="['/lightbox', 5575041509]"
-          photoSrc="assets/images/photography/5575041509.JPG"
-          photoAlt="Cementerio Santa María Magdalena de Pazzis, San Juan, Puerto Rico"
-        ></app-photo>
-        <app-photo
-          [routerLink]="['/lightbox', 2949]"
-          photoSrc="assets/images/photography/2949.JPG"
-          photoAlt="Rahoe Street Night Market, Rahoe St, Songshan District, Taipei City, Taiwan 105"
-        ></app-photo>
-        <app-photo
-          [routerLink]="['/lightbox', 3225040254]"
-          photoSrc="assets/images/photography/3225040254.JPG"
-          photoAlt="Cle Elum, Washington"
-        ></app-photo>
-        <app-photo
-          [routerLink]="['/lightbox', 5532041507]"
-          photoSrc="assets/images/photography/5532041507.JPG"
-          photoAlt="Campanilla, Toa Baja, Puerto Rico"
-        ></app-photo>
-        <app-photo
-          [routerLink]="['/lightbox', 6078433077]"
-          photoSrc="assets/images/photography/6078433077.JPG"
-          photoAlt="Trinity College, Dublin, Ireland"
-        ></app-photo>
-        <app-photo
-          [routerLink]="['/lightbox', 9797]"
-          photoSrc="assets/images/photography/9797.JPG"
-          photoAlt="Playa Guajataca, Isabela, Puerto Rico"
-        ></app-photo>
-        <app-photo
-          [routerLink]="['/lightbox', 70710021]"
-          photoSrc="assets/images/photography/70710021.JPG"
-          photoAlt="Shinjuku, Tokyo, Japan"
-        ></app-photo>
-        <app-photo
-          [routerLink]="['/lightbox', 70750028]"
-          photoSrc="assets/images/photography/70750028.JPG"
-          photoAlt="Arashiyama Yusaitei in Kyoto, Japan"
-        ></app-photo>
-        <app-photo
-          [routerLink]="['/lightbox', 295350033]"
-          photoSrc="assets/images/photography/295350033.JPG"
-          photoAlt="Vega Alta, Puerto Rico"
-        ></app-photo>
-        <app-photo
-          [routerLink]="['/lightbox', 63960011]"
-          photoSrc="assets/images/photography/63960011.JPG"
-          photoAlt="Lady Bird Johnson Wildflower Center in Austin, Texas"
-        ></app-photo>
-        <app-photo
-          [routerLink]="['/lightbox', 4705]"
-          photoSrc="assets/images/photography/4705.JPG"
-          photoAlt="Avila, Spain"
-        ></app-photo>
-        <app-photo
-          [routerLink]="['/lightbox', 4516]"
-          photoSrc="assets/images/photography/4516.JPG"
-          photoAlt="Jacinto Benavente statue in Madrid, Spain"
-        ></app-photo>
-        <app-photo
-          [routerLink]="['/lightbox', 70710022]"
-          photoSrc="assets/images/photography/70710022.JPG"
-          photoAlt="4 Chome-2-8 Shibakoen, Minato City, Tokyo 105-0011, Japan"
-        ></app-photo>
-        <app-photo
-          [routerLink]="['/lightbox', 1201]"
-          photoSrc="assets/images/photography/1201.JPG"
-          photoAlt="Pier in San Juan, Puerto Rico"
-        ></app-photo>
-        <app-photo
-          [routerLink]="['/lightbox', 2016]"
-          photoSrc="assets/images/photography/2016.JPG"
-          photoAlt="Walnut Creek Park in Austin, Texas"
-        ></app-photo>
-        <app-photo
-          [routerLink]="['/lightbox', 6841]"
-          photoSrc="assets/images/photography/6841.JPG"
-          photoAlt="Seattle Japanese Garden, Seattle, Washington"
-        ></app-photo>
+      </div>
+
+      <div *ngIf="hasMorePhotos" #loadTrigger class="load-trigger">
+        <button
+          type="button"
+          class="load-more-button"
+          (click)="loadMorePhotos()"
+        >
+          Continue Exploring
+        </button>
       </div>
     </div>
   </section>

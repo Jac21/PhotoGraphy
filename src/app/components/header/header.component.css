@@ -1,14 +1,30 @@
+.site-header {
+  padding: 18px 10px 0;
+}
+
 .header-link {
+  display: block;
+  width: min(1128px, 100%);
+  margin: 0 auto;
+  padding: 0 0 18px;
+  border-bottom: 1px solid #ece4df;
   text-align: center;
   text-decoration: none;
   color: #525252;
 }
 
 .header-title {
+  margin: 0;
   font-family: "Playfair Display SC";
   font-weight: 400;
   letter-spacing: 1px;
-  border-bottom: 1px solid #e5e5e5;
-  padding-bottom: 20px;
+  color: #3d312c;
 }
 
+.header-subtitle {
+  margin: 8px 0 0;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8b796f;
+}

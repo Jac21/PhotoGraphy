@@ -1,9 +1,18 @@
 <footer class="footer-wrapper">
-  <p>
-    <a id="button-back-to-top" class="button-back-to-top" (click)="scrollToTop()">Back to Top</a>
-  </p>
-  <p>
-    <a href="https://github.com/jac21/photography" rel="noopener noreferrer" target="_blank">Code</a> |
-    <a routerLink="/contact">Contact</a>
-  </p>
+  <div class="footer-shell">
+    <p class="footer-note">Stay awhile</p>
+    <nav class="footer-actions" aria-label="Footer">
+      <a id="button-back-to-top" class="footer-link" (click)="scrollToTop()"
+        >Back to Top</a
+      >
+      <a
+        class="footer-link"
+        href="https://github.com/jac21/photography"
+        rel="noopener noreferrer"
+        target="_blank"
+        >Code</a
+      >
+      <a class="footer-link" routerLink="/contact">Contact</a>
+    </nav>
+  </div>
 </footer>

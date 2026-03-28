@@ -1,3 +1,11 @@
 <div class="app-photo-wrapper">
-  <img [src]="photoSrc" [alt]="photoAlt" class="photo">
+  <img
+    [src]="photoSrc"
+    [alt]="photoAlt"
+    [loading]="loading"
+    [attr.fetchpriority]="fetchPriority"
+    (load)="onImageLoad()"
+    decoding="async"
+    class="photo"
+  >
 </div>
