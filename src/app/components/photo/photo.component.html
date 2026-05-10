@@ -1,4 +1,4 @@
-<div class="app-photo-wrapper">
+<div class="app-photo-wrapper" [class.has-title]="!!photoTitle">
   <img
     [src]="photoSrc"
     [alt]="photoAlt"
@@ -9,4 +9,5 @@
     decoding="async"
     class="photo"
   >
+  <span *ngIf="photoTitle" class="photo-title">{{ photoTitle }}</span>
 </div>

@@ -33,53 +33,70 @@ export class PhotoGridComponent implements OnInit, AfterViewInit, OnDestroy {
       id: 8326,
       photoSrc: "assets/images/photography/8326.JPG",
       photoAlt: "Liantan Rd, Zuoying District, Kaohsiung City, Taiwan",
+      photoTitle: "Liantan Rd, Zuoying District",
     },
     {
       id: 9154043622,
       photoSrc: "assets/images/photography/9154043622.JPG",
       photoAlt: "Blanton Museum of Art, Austin, Texas",
+      photoTitle: "Joanne",
     },
     {
       id: 5608041502,
       photoSrc: "assets/images/photography/5608041502.JPG",
-      photoAlt: "Cabo Rojo, Puerto Rico",
+      photoAlt: "WRP5+WWQ Cabo Rojo, Puerto Rico",
+      photoTitle: "Cabo Rojo",
     },
     {
       id: 5936,
       photoSrc: "assets/images/photography/5936.JPG",
-      photoAlt: "Ruifeng Night Market, Kaohsiung City, Taiwan",
+      photoAlt: "804, Taiwan, Kaohsiung City, Zuoying District, Yucheng Rd, 南屏路",
+      photoTitle: "Ruifeng Night Market",
     },
     {
       id: 9154043623,
       photoSrc: "assets/images/photography/9154043623.JPG",
-      photoAlt: "'Austin' by Ellsworth Kelly, Austin, Texas",
+      photoAlt: "'200 E Martin Luther King Jr Blvd, Austin, TX 78712",
+      photoTitle: "\"Austin\" by Ellsworth Kelly",
     },
     {
       id: 5575041509,
       photoSrc: "assets/images/photography/5575041509.JPG",
       photoAlt:
-        "Cementerio Santa Maria Magdalena de Pazzis, San Juan, Puerto Rico",
+        "FV9J+R4R, Cemetery St, San Juan, 00901, Puerto Rico",
+      photoTitle: "Cementerio Santa María Magdalena de Pazzis",
     },
     {
       id: 2949,
       photoSrc: "assets/images/photography/2949.JPG",
       photoAlt:
-        "Rahoe Street Night Market, Rahoe St, Songshan District, Taipei City, Taiwan 105",
+        "Raohe St, Songshan District, Taipei City, Taiwan 105",
+      photoTitle: "Raohe Street Night Market",
+    },
+    {
+      id: 96460166,
+      photoSrc: "assets/images/photography/96460166.JPG",
+      photoAlt:
+        "Emma Long Metropolitan Park",
+      photoTitle: "Joanne & Iris",
     },
     {
       id: 3225040254,
       photoSrc: "assets/images/photography/3225040254.JPG",
-      photoAlt: "Cle Elum, Washington",
+      photoAlt: "(47.2004898, -120.9970447)",
+      photoTitle: "Cle Elum, Washington",
     },
     {
       id: 5532041507,
       photoSrc: "assets/images/photography/5532041507.JPG",
-      photoAlt: "Campanilla, Toa Baja, Puerto Rico",
+      photoAlt: "Toa Baja 00949, Puerto Rico",
+      photoTitle: "Campanilla",
     },
     {
       id: 6078433077,
       photoSrc: "assets/images/photography/6078433077.JPG",
-      photoAlt: "Trinity College, Dublin, Ireland",
+      photoAlt: "College Green, Dublin 2, Ireland",
+      photoTitle: "Trinity College",
     },
     {
       id: 4034431755,
@@ -91,7 +108,8 @@ export class PhotoGridComponent implements OnInit, AfterViewInit, OnDestroy {
     {
       id: 9797,
       photoSrc: "assets/images/photography/9797.JPG",
-      photoAlt: "Playa Guajataca, Isabela, Puerto Rico",
+      photoAlt: "(18.4889958, -66.9593820)",
+      photoTitle: "Playa Guajataca",
     },
     {
       id: 5898005341,
@@ -103,59 +121,69 @@ export class PhotoGridComponent implements OnInit, AfterViewInit, OnDestroy {
     {
       id: 70710021,
       photoSrc: "assets/images/photography/70710021.JPG",
-      photoAlt: "Shinjuku, Tokyo, Japan",
+      photoAlt: "5 Chome-3-18 Shinjuku, Shinjuku City, Tokyo 160-0022, Japan",
+      photoTitle: "Shinjuku",
     },
     {
       id: 70750028,
       photoSrc: "assets/images/photography/70750028.JPG",
-      photoAlt: "Arashiyama Yusaitei in Kyoto, Japan",
-    },
-    {
-      id: 96460166,
-      photoSrc: "assets/images/photography/96460166.JPG",
-      photoAlt:
-        "Joanne & Iris",
-      photoTitle: "Emma Long Metropolitan Park",
+      photoAlt: "Japan, 〒616-8386 Kyoto, Ukyo Ward, Sagakamenoocho, 官有地内 嵐山夢祐斎",
+      photoTitle: "Arashiyama, Kyoto",
     },
     {
       id: 295350033,
       photoSrc: "assets/images/photography/295350033.JPG",
-      photoAlt: "Vega Alta, Puerto Rico",
+      photoAlt: "Puerto Rico",
+      photoTitle: "Vega Alta",
     },
     {
       id: 63960011,
       photoSrc: "assets/images/photography/63960011.JPG",
-      photoAlt: "Lady Bird Johnson Wildflower Center in Austin, Texas",
+      photoAlt: "Austin, Texas",
+      photoTitle: "Lady Bird Johnson Wildflower Center",
+    },
+    {
+      id: 70750033,
+      photoSrc: "assets/images/photography/70750033.JPG",
+      photoAlt:
+        "Japan, \u3016616-8386 Kyoto, Ukyo Ward, Sagakamenoocho, 1 \u5b98\u6709\u5730\u5185 \u5d50\u5c71\u5922\u7950\u658e \u4eac\u90fd\u5e02\u53f3\u4eac\u533a\u5d6f\u5ce8\u4e80\u30ce\u5c3e\u753a \u5b98\u6709\u5730\u5185 \u677e\u7c5f\u5eb5\u96a3",
+      photoTitle: "Somekobo Yumeyusai",
     },
     {
       id: 4705,
       photoSrc: "assets/images/photography/4705.JPG",
-      photoAlt: "Avila, Spain",
+      photoAlt: "Spain",
+      photoTitle: "Avila",
     },
     {
       id: 4516,
       photoSrc: "assets/images/photography/4516.JPG",
-      photoAlt: "Jacinto Benavente statue in Madrid, Spain",
+      photoAlt: "Madrid, Spain",
+      photoTitle: "Jacinto Benavente",
     },
     {
       id: 70710022,
       photoSrc: "assets/images/photography/70710022.JPG",
       photoAlt: "4 Chome-2-8 Shibakoen, Minato City, Tokyo 105-0011, Japan",
+      photoTitle: "Tokyo Tower",
     },
     {
       id: 1201,
       photoSrc: "assets/images/photography/1201.JPG",
-      photoAlt: "Pier in San Juan, Puerto Rico",
+      photoAlt: "Puerto Rico",
+      photoTitle: "San Juan Pier",
     },
     {
       id: 2016,
       photoSrc: "assets/images/photography/2016.JPG",
       photoAlt: "Walnut Creek Park in Austin, Texas",
+      photoTitle: "Vera",
     },
     {
       id: 6841,
       photoSrc: "assets/images/photography/6841.JPG",
-      photoAlt: "Seattle Japanese Garden, Seattle, Washington",
+      photoAlt: "Seattle, Washington",
+      photoTitle: "Seattle Japanese Garden",
     },
   ];
 
