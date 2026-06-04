@@ -3,9 +3,10 @@ import { ActivatedRoute } from "@angular/router";
 import { Meta } from "@angular/platform-browser";
 
 @Component({
-  selector: "app-lightbox",
-  templateUrl: "./lightbox.component.html",
-  styleUrls: ["./lightbox.component.css"]
+    selector: "app-lightbox",
+    templateUrl: "./lightbox.component.html",
+    styleUrls: ["./lightbox.component.css"],
+    standalone: false
 })
 export class LightboxComponent implements OnInit, OnDestroy {
   id: string;

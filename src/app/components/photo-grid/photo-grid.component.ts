@@ -16,9 +16,10 @@ interface PhotoItem {
 }
 
 @Component({
-  selector: "app-photo-grid",
-  templateUrl: "./photo-grid.component.html",
-  styleUrls: ["./photo-grid.component.css"],
+    selector: "app-photo-grid",
+    templateUrl: "./photo-grid.component.html",
+    styleUrls: ["./photo-grid.component.css"],
+    standalone: false
 })
 export class PhotoGridComponent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild("loadTrigger") loadTrigger?: ElementRef<HTMLDivElement>;
