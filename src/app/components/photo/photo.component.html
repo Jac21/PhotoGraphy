@@ -8,6 +8,8 @@
     (load)="onImageLoad()"
     decoding="async"
     class="photo"
-  >
-  <span *ngIf="photoTitle" class="photo-title">{{ photoTitle }}</span>
+    >
+  @if (photoTitle) {
+    <span class="photo-title">{{ photoTitle }}</span>
+  }
 </div>

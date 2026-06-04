@@ -16,31 +16,32 @@
   <section class="gallery-grid">
     <div class="container">
       <div id="macy-container">
-        <app-photo
-          *ngFor="
-            let photo of visiblePhotos;
-            let index = index;
-            trackBy: trackByPhotoId
-          "
-          [routerLink]="['/lightbox', photo.id]"
-          [photoAlt]="photo.photoAlt"
-          [photoSrc]="photo.photoSrc"
-          [photoTitle]="photo.photoTitle"
-          [loading]="index < 3 ? 'eager' : 'lazy'"
-          [fetchPriority]="index < 3 ? 'high' : 'auto'"
-          (imageLoaded)="onPhotoLoaded()"
-        ></app-photo>
+        @for (
+          photo of visiblePhotos; track trackByPhotoId(index,
+          photo); let index = $index) {
+          <app-photo
+            [routerLink]="['/lightbox', photo.id]"
+            [photoAlt]="photo.photoAlt"
+            [photoSrc]="photo.photoSrc"
+            [photoTitle]="photo.photoTitle"
+            [loading]="index < 3 ? 'eager' : 'lazy'"
+            [fetchPriority]="index < 3 ? 'high' : 'auto'"
+            (imageLoaded)="onPhotoLoaded()"
+          ></app-photo>
+        }
       </div>
 
-      <div *ngIf="hasMorePhotos" #loadTrigger class="load-trigger">
-        <button
-          type="button"
-          class="load-more-button"
-          (click)="loadMorePhotos()"
-        >
-          Continue Exploring
-        </button>
-      </div>
+      @if (hasMorePhotos) {
+        <div #loadTrigger class="load-trigger">
+          <button
+            type="button"
+            class="load-more-button"
+            (click)="loadMorePhotos()"
+            >
+            Continue Exploring
+          </button>
+        </div>
+      }
     </div>
   </section>
 </main>
